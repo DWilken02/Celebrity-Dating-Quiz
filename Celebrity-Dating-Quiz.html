@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/scripts.js"></script>
+    <title>Celebrity Dating Quiz</title>
+  </head>
+  <body>
+    <div>
+      <h1>Celebrity Dating Quiz</h1>
+
+      <p>Welcome to the online celebrity dating quiz. Here we can determine which of the following celebs that would be best suited for you to date based on your answers!!</p>
+
+      <form id="userInfo">
+        <p id="error-message" class="hidden">You must be 21 or over to do this quiz</p>
+        <label for="age">Your Age</label>
+        <input id="age" type="text" name="age">
+        <label for="gender">Your gender</label>
+        <input id="gender" type="text" name="gender">
+        <button type="submit">Submit Answers</button>
+      </form>
+
+      <div id="male" class="hidden">
+        <h1>Here's who you can date:</h1>
+        <ul>
+          <li>Ariana Grande</li>
+          <li>Taylor Swift</li>
+          <li>Beyoncé</li>
+        </ul>
+      </div>
+      <div id="female" class="hidden">
+        <h1>Here's who you can date</h1>
+        <ul>
+          <li>Zac Efron</li>
+          <li>Justin Bieber</li>
+          <li>Justin Timberlake</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
