@@ -9,15 +9,17 @@ window.onload = function() {
     event.preventDefault();
     hideResultsAndError();
     const age = parseInt(document.querySelector("input#age").value);
-    const gender = parseInt(document.querySelector("input#gender").value);
+    const gender = document.querySelector("input#gender").value;
 
     if (!age || !gender) {
       document.getElementById("error-message").removeAttribute("class");
     } else {
-      if (age >= 21 && gender >= male) {
-        document.getElementById("male"). removeAttribute("class");
-      } else if (age >= 21 || gender >= female) {
+      if (age >= 21 && gender == "male") {
+        document.getElementById("male").removeAttribute("class");
+      } else if (age >= 21 && gender == "female") {
         document.getElementById("female").removeAttribute("class");
+      } else {
+        document.getElementById("no").removeAttribute("class");
       }
     }
   }
